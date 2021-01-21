@@ -7,7 +7,7 @@ on:
     - '*'
 
 env:
-  DOCKER_ORG: pangeo
+  DOCKER_ORG: souze
   GITHUB_SHA: ${{ github.sha }}
   GITHUB_REF: ${{ github.ref }}
 

@@ -13,6 +13,7 @@ dependencies:
  - cfgrib
  - cmip6_preprocessing
  - ciso
+ - dask-jobqueue
  - dask-ml
  - datashader
  - descartes
