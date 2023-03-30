@@ -35,7 +35,7 @@ jobs:
         echo "IMAGE_SPEC=${IMAGE_SPEC}" >> $GITHUB_ENV
 
     - name: Build and Publish to DockerHub
-      uses: elgohr/Publish-Docker-Github-Action@2.12
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: ${{env.DOCKER_ORG}}/${{ env.IMAGE }}
         username: ${{ secrets.DOCKERHUB_USER }}
@@ -66,7 +66,7 @@ jobs:
         echo "IMAGE_SPEC=${IMAGE_SPEC}" >> $GITHUB_ENV
 
     - name: Build and Publish to DockerHub
-      uses: elgohr/Publish-Docker-Github-Action@2.12
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: ${{env.DOCKER_ORG}}/${{ matrix.IMAGE }}
         username: ${{ secrets.DOCKERHUB_USER }}
